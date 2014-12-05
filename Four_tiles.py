@@ -67,7 +67,7 @@ def game(waiting_time):
 
 
     def draw_buttons():
-        for i in range(1, 5):
+        for i in range(1, NUMBER_OF_BUTTONS + 1):
             draw_button(i, COLORS[i - 1])
 
     def what_button_is_clicked(mouse_pos):
