@@ -35,7 +35,7 @@ def game(waiting_time):
     CYAN = (0, 183, 235)
     VIOLET = (127, 0, 255)
 
-    ALL_COLORS = [WHITE, RED, GREEN, BLUE, YELLOW, PINK
+    ALL_COLORS = [WHITE, RED, GREEN, BLUE, YELLOW, PINK,
     BROWN, ORANGE, CYAN, VOILET]
 
     COLORS = [random.choice(COLORS) for _ in range(NUMBER_OF_BUTTONS)]
