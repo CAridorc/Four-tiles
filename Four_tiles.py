@@ -73,10 +73,10 @@ def game(waiting_time):
         if x < WIDTH / 2 and y < HEIGHT / 2:
             return 1
 
-        if x > WIDTH / 2 and y < HEIGHT / 2:
+        elif x > WIDTH / 2 and y < HEIGHT / 2:
             return 2
 
-        if x < WIDTH / 2 and y > HEIGHT / 2:
+        elif x < WIDTH / 2 and y > HEIGHT / 2:
             return 3
 
         elif x > WIDTH / 2 and y > HEIGHT / 2:
