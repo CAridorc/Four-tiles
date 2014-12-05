@@ -40,8 +40,8 @@ def game(waiting_time):
 
     COLORS = []
     for color in ALL_COLORS:
-		COLORS.append(color)
-		ALL_COLORS.remove(color) # Avoid choosing the same color twice
+	COLORS.append(color)
+	ALL_COLORS.remove(color) # Avoid choosing the same color twice
 
 
     def generate_correct_sequence(length):
