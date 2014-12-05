@@ -24,10 +24,10 @@ def game(waiting_time):
 
     WHITE = (255, 255, 255)
     RED = (255, 0, 0)
-    green = (0, 255, 0)
-    blue = (0, 0, 255)
-    yellow = (255, 255, 0)
-    COLORS = [RED, blue, green, yellow]
+    GREEN = (0, 255, 0)
+    BLUE = (0, 0, 255)
+    YELLOW = (255, 255, 0)
+    COLORS = [RED, BLUE, GREEN, YELLOW]
 
 
     def generate_correct_sequence(length):
@@ -45,19 +45,18 @@ def game(waiting_time):
     def draw_button(n, color):
         if n == 1:
             pg.draw.rect(DISPLAY, color, (0, 0, WIDTH / 2, HEIGHT / 2))
-        if n == 2:
+        elif n == 2:
             pg.draw.rect(DISPLAY,color,
             (WIDTH / 2, 0, WIDTH / 2, HEIGHT / 2))
-        if n == 3:
+        elif n == 3:
             pg.draw.rect(DISPLAY,color,
             (0, HEIGHT / 2, WIDTH / 2, HEIGHT / 2))
-        if n == 4:
+        elif n == 4:
             pg.draw.rect(DISPLAY,color,
             (WIDTH / 2, HEIGHT / 2, WIDTH / 2, HEIGHT / 2))
 
 
     def draw_buttons():
-
         for i in range(1, 5):
             draw_button(i, COLORS[i - 1])
 
