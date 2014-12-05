@@ -134,7 +134,7 @@ if __name__ == "__main__":
     root.wm_title("Four tiles game")
 
     def play():
-        game(w.get()*200)
+        game(w.get()*50)
 
     INTRODUCTION = tk.StringVar()
     INTRODUCTION.set("""Welcome to the four tiles game.
@@ -143,7 +143,7 @@ Afterwards, you must click them in the same order they lit up before.""")
     tk.Message(root, textvariable=INTRODUCTION, width=500, font=30).pack()
 
     tk.Label(root, text="Select the flashing time down here", font=30).pack()
-    w = tk.Scale(root, from_=1, to=5, orient=tk.HORIZONTAL, length=400)
+    w = tk.Scale(root, from_=1, to=20, orient=tk.HORIZONTAL, length=400)
     w.pack()
 
     tk.Button(root, text="Play", command=play).pack()
