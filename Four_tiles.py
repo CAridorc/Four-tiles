@@ -2,13 +2,15 @@ import pygame as pg
 import sys
 import random
 import time
-import tkMessageBox
 from pygame.locals import *
 
 if sys.version_info.major == 3:
+    impotr tkinter.messagebox as tkMessageBox
     import tkinter as tk
 else:
     import Tkinter as tk
+    import tkMessageBox
+
 
 
 
