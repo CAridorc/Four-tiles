@@ -45,9 +45,9 @@ def game(waiting_time):
         Creates a sequence of a given length
         where no digit appears two times in a row.
         """
-        sequence = [random.randint(1,4)]
+        sequence = [random.randint(1,NUMBER_OF_BUTTONS)]
         while (len(sequence) + 1) < length:
-                r = random.randint(1,4)
+                r = random.randint(1,NUMBER_OF_BUTTONS)
                 if r != sequence[-1]:
                         sequence.append(r)
         return sequence
