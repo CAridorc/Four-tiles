@@ -38,7 +38,11 @@ def game(waiting_time):
     ALL_COLORS = [WHITE, RED, GREEN, BLUE, YELLOW, PINK,
     BROWN, ORANGE, CYAN, VIOLET]
 
-    COLORS = [random.choice(ALL_COLORS) for _ in range(NUMBER_OF_BUTTONS)]
+    COLORS = []
+    for color in ALL_COLORS:
+		COLORS.append(color)
+		ALL_COLORS.remove(color) # Avoid choosing the same color twice
+
 
     def generate_correct_sequence(length):
         """
