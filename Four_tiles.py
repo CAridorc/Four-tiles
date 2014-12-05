@@ -22,6 +22,8 @@ def game(waiting_time):
     HEIGHT = 400
     DISPLAY = pg.display.set_mode((WIDTH, HEIGHT), 0, 32)
 
+    NUMBER_OF_BUTTONS = 4
+    
     WHITE = (255, 255, 255)
     RED = (255, 0, 0)
     GREEN = (0, 255, 0)
@@ -33,9 +35,10 @@ def game(waiting_time):
     CYAN = (0, 183, 235)
     VIOLET = (127, 0, 255)
 
+    ALL_COLORS = [WHITE, RED, GREEN, BLUE, YELLOW, PINK
+    BROWN, ORANGE, CYAN, VOILET]
 
-    COLORS = [RED, BLUE, GREEN, YELLOW]
-
+    COLORS = [random.choice(COLORS) for _ in range(NUMBER_OF_BUTTONS)]
 
     def generate_correct_sequence(length):
         """
