@@ -38,7 +38,7 @@ def game(waiting_time):
     ALL_COLORS = [WHITE, RED, GREEN, BLUE, YELLOW, PINK,
     BROWN, ORANGE, CYAN, VIOLET]
 
-    COLORS = [random.choice(COLORS) for _ in range(NUMBER_OF_BUTTONS)]
+    COLORS = [random.choice(ALL_COLORS) for _ in range(NUMBER_OF_BUTTONS)]
 
     def generate_correct_sequence(length):
         """
