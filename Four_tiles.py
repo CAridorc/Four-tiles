@@ -27,6 +27,13 @@ def game(waiting_time):
     GREEN = (0, 255, 0)
     BLUE = (0, 0, 255)
     YELLOW = (255, 255, 0)
+    PINK = (255,150,180)
+    BROWN = (180,80,0)
+    ORANGE = (255,180,0)
+    CYAN = (0, 183, 235)
+    VIOLET = (127, 0, 255)
+
+
     COLORS = [RED, BLUE, GREEN, YELLOW]
 
 
